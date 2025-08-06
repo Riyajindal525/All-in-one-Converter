@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>All-in-One Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>All-in-One Converter</h1>
+  <div class="container">
+
+    <!-- Currency -->
+    <div class="box">
+      <h2>Currency Converter</h2>
+      <input type="number" placeholder="Enter amount" id="currency-amount">
+      <div class="selectors">
+        <select id="from-currency">
+          <option value="USD">USD</option>
+          <option value="INR">INR</option>
+          <option value="EUR">EURO</option>
+        </select>
+        <span>➡️</span>
+        <select id="to-currency">
+          <option value="INR">INR</option>
+          <option value="USD">USD</option>
+          <option value="EUR">EURO</option>
+        </select>
+      </div>
+      <button id="convert-currency">Convert</button>
+      <p class="result" id="currency-result">Converted amount will appear here</p>
+    </div>
+
+    <!-- Length -->
+    <div class="box">
+      <h2>Length Converter</h2>
+      <input type="number" placeholder="Enter length" id="length-value">
+      <div class="selectors">
+        <select id="from-length">
+          <option value="km" >Kilometers</option>
+          <option value="m">Meters</option>
+          <option value="cm">Centimeters</option>
+        </select>
+        <span>➡️</span>
+        <select id="to-length">
+          <option value="m">Meters</option>
+          <option value="km">Kilometers</option>
+          <option value="cm">Centimeters</option>
+        </select>
+      </div>
+      <button id="convert-length">Convert</button>
+      <p class="result" id="length-result">Converted length will appear here</p>
+    </div>
+
+    <!-- Volume -->
+    <div class="box">
+      <h2>Volume Converter</h2>
+      <input type="number" placeholder="Enter volume" id="volume-value">
+      <div class="selectors">
+        <select id="from-volume">
+          <option value="l">Liters</option>
+          <option value="ml">Milliliters</option>
+        </select>
+        <span>➡️</span>
+        <select id="to-volume">
+          <option value="ml">Milliliters</option>
+          <option value="l">Liters</option>
+        </select>
+      </div>
+      <button id="convert-volume">Convert</button>
+      <p class="result" id="volume-result">Converted volume will appear here</p>
+    </div>
+
+    <!-- Weight -->
+    <div class="box">
+      <h2>Weight Converter</h2>
+      <input type="number" placeholder="Enter weight" id="weight-value">
+      <div class="selectors">
+        <select id="from-weight">
+          <option value="kg">Kilograms</option>
+          <option value="g">Grams</option>
+        </select>
+        <span>➡️</span>
+        <select id="to-weight">
+          <option value="g">Grams</option>
+          <option value="kg">Kilograms</option>
+        </select>
+      </div>
+      <button id="convert-weight">Convert</button>
+      <p class="result" id="weight-result">Converted weight will appear here</p>
+    </div>
+
+    <!-- Temperature -->
+    <div class="box">
+      <h2>Temperature Converter</h2>
+      <input type="number" placeholder="Enter temperature" id="temp-value">
+      <div class="selectors">
+        <select id="from-temp">
+          <option value="C">Celsius</option>
+          <option value="F">Fahrenheit</option>
+          <option value="K">Kelvin</option>
+        </select>
+        <span>➡️</span>
+        <select id="to-temp">
+          <option value="F">Fahrenheit</option>
+          <option value="C">Celsius</option>
+          <option value="K">Kelvin</option>
+        </select>
+      </div>
+      <button id="convert-temp">Convert</button>
+      <p class="result" id="temp-result">Converted temperature will appear here</p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
